@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 상세보기 페이지 -->
+    <section class="viewdetails hide-viewdetails">
+        <div class="viewbox-notbody">
+          <table class="details-table">
+            <tr>
+              <td><h3>No.</h3></td>
+              <td><span id="viewbox-id"></span></td>
+
+              <td><h3>Title</h3></td>
+              <td><span id="viewbox-title"></span></td>
+            
+              <td><h3>Date</h3></td>
+              <td><span id="viewbox-datetime"></span></td>
+            
+              <td><h3>Author</h3></td>
+              <td><span id="viewbox-author"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div id="viewbox-body"></div>
+    </section>
+
+    <!-- 홈페이지 -->
+    <section class="homepage">
+      <h1>Yeong Gyu's Bulletin</h1>
+      <table class="bulletin">
+        <tr>
+          <th>No.</th>
+          <th>title</th>
+          <th>datetime</th>
+          <th>author</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+      </table>
+    </section><br><br>
+
+    <!-- 글 수정 폼 -->
+    <section class="update-page hide-update-form">
+      <form class="update-form">
+        <input class="title" type="text" placeholder="title"><br><br>
+        <input class="date" type="date">
+        <input class="author" type="text" placeholder="author"><br>
+        <textarea class="bodytext" name="" id="" cols="50" rows="30"></textarea><br>
+        <input type="submit" value="submit">
+      </form>
+    </section>
+
+
+    <!-- 글 생성 폼 -->
+    <footer>
+        <form class="create-form hide-create-form">
+            <input class="title" type="text" placeholder="title"><br><br>
+            <input class="date" type="date">
+            <input class="author" type="text" placeholder="author"><br>
+            <textarea class="bodytext" name="" id="" cols="50" rows="30"></textarea><br>
+            <input type="submit" value="submit">
+        </form>
+        <div class="toolbar">
+          <a href="" class="create-form-link"><span>글쓰기</span></a>
+          <a href="/"><home>home</home></a>
+        </div>
+    </footer>
+<script src="main.js"></script>
+</body>
+</html>

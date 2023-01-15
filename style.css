@@ -1,0 +1,44 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}                                       /* hide-homepage보다 위에 놓으니까 둘다 잘 적용되네*/
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 90%;
+}
+td {
+    border: 1px solid #444444;
+
+}
+
+th {
+    border: 1px solid #444444;
+}
+
+tr {
+    border: 1px solid #444444;
+}
+
+
+
+#viewbox-body {
+    border: 1px solid black;
+    width: 90%;
+    height: 70vh;
+    margin-top: 25px;
+    word-break:break-all;
+    overflow-y: scroll;
+}
+
+
+.toolbar {
+    text-align: right;
+    margin-right: 60px;
+}
+
+.hide-create-form, .hide-homepage, .hide-viewdetails, .hide-update-form, .overlap-check, .update-btn, .delete-btn {
+    display: none;
+}
