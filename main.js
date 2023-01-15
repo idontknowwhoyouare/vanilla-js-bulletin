@@ -48,7 +48,7 @@ function savePosts(e) {                // preventDefault 해야되나? 해야되
     localStorage.setItem(POSTS_KEY, JSON.stringify(posts)); 
     console.log(posts);
     renderPosts(posts.length - 1);
-    location.href = './index.html';
+    location.href = '/';
 }
 
 function renderPosts(index) {
@@ -117,7 +117,7 @@ function updateProcess(e, updatingPost) {
     updatingPost.bodyText = updatingBodytext.value;
     
     localStorage.setItem(POSTS_KEY, JSON.stringify(posts)); 
-    location.href = './index.html';
+    location.href = '/';
     
 }
 
@@ -126,7 +126,7 @@ function deleteProcess (e) {
     const DeletingPost = posts.find(el => el.id === Number(e.target.children[0].innerText));
     posts = posts.filter(el => el !== DeletingPost);
     localStorage.setItem(POSTS_KEY, JSON.stringify(posts)); 
-    location.href = './index.html';
+    location.href = '/';
 }
 
 
